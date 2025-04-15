@@ -17,17 +17,14 @@ int main()
 
 	calc = a * b * c;
 	str = to_string(calc);
-	// str까지 변환은 됨.
 
 	for (int i = 0; i < str.size(); i++)
 	{
-		// str의 1번째 즉 1
 		for (int j = 0; j < strV.size(); j++)
 		{
 			if (str[i] == strV[j])
 			{
 				int e = str[i] - '0';
-				//cout << e << endl;
 				cntV[e]++;
 			}
 		}
