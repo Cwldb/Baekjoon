@@ -40,10 +40,10 @@ int main()
 			isSame2 = true;
 	}
 
-	if (!isSame1 && !isSame2)
-		cout << "Accepted\n";
-	else if (isSame1 && !isSame2)
+	if (isSame1)
 		cout << "Wrong Answer\n";
-	else if (!isSame1 && isSame2)
+	else if (isSame2)
 		cout << "Why Wrong!!!\n";
+	else
+		cout << "Accepted\n";
 }
